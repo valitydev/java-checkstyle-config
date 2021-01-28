@@ -40,9 +40,10 @@
         <property name="eachLine" value="true"/>
     </module>
 
+    <!-- Increased from 100 to 120 to match IDEA defaults -->
     <module name="LineLength">
         <property name="fileExtensions" value="java"/>
-        <property name="max" value="100"/>
+        <property name="max" value="120"/>
         <property name="ignorePattern" value="^package.*|^import.*|a href|href|http://|https://|ftp://"/>
     </module>
 
