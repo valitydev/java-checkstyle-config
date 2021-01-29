@@ -243,10 +243,6 @@
             <property name="option" value="bottom"/>
             <property name="sortStaticImportsAlphabetically" value="true"/>
         </module>
-        <module name="SuppressionXpathSingleFilter">
-            <property name="checks" value="ImportOrder"/>
-            <property name="message" value="^'java\..*'.*"/>
-        </module>
         <module name="MethodParamPad">
             <property name="tokens"
              value="CTOR_DEF, LITERAL_NEW, METHOD_CALL, METHOD_DEF,
