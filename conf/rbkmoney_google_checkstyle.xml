@@ -220,8 +220,10 @@
             <property name="basicOffset" value="4"/>
             <property name="braceAdjustment" value="0"/>
             <property name="caseIndent" value="4"/>
-            <property name="throwsIndent" value="6"/>
-            <property name="lineWrappingIndentation" value="6"/>
+            <!-- Increased from 6 to 8 to match IDEA defaults -->
+            <property name="throwsIndent" value="8"/>
+            <!-- Increased from 6 to 8 to match IDEA defaults -->
+            <property name="lineWrappingIndentation" value="8"/>
             <property name="arrayInitIndent" value="4"/>
         </module>
         <module name="AbbreviationAsWordInName">
