@@ -310,8 +310,9 @@
         <module name="EmptyCatchBlock">
             <property name="exceptionVariableName" value="expected"/>
         </module>
+        <!-- Removed SINGLE_LINE_COMMENT not to mess with IDEA `cmd + /` comments -->
         <module name="CommentsIndentation">
-            <property name="tokens" value="SINGLE_LINE_COMMENT, BLOCK_COMMENT_BEGIN"/>
+            <property name="tokens" value="BLOCK_COMMENT_BEGIN"/>
         </module>
         <!-- https://checkstyle.org/config_filters.html#SuppressionXpathFilter -->
         <module name="SuppressionXpathFilter">
