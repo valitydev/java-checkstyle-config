@@ -232,7 +232,7 @@
             <property name="ignoreFinal" value="false"/>
             <property name="allowedAbbreviationLength" value="1"/>
             <!-- Added ID, IT, RBK, DS, URL -->
-            <property name="allowedAbbreviations" value="ID, IT, RBK, DS, URL"/>
+            <property name="allowedAbbreviations" value="ID, IT, RBK, DS, URL, UUID, IP, HTML, BIN, JS, SSL"/>
             <property name="tokens"
              value="CLASS_DEF, INTERFACE_DEF, ENUM_DEF, ANNOTATION_DEF, ANNOTATION_FIELD_DEF,
                     PARAMETER_DEF, VARIABLE_DEF, METHOD_DEF"/>

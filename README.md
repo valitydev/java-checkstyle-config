@@ -43,7 +43,7 @@ First path — override `${checkstyle.config.suppressions.path}` in project with
 pom.xml:
 ```xml
 <properties>
-    <checkstyle.config.suppressions.path>checkstyle-suppressions.xml</checkstyle.config.suppressions.path>
+    <checkstyle.config.suppressions.path>./src/main/resources/checkstyle/checkstyle-suppressions.xml</checkstyle.config.suppressions.path>
 </properties>
 ```
 
@@ -56,14 +56,13 @@ checkstyle-suppressions.xml:
         "https://checkstyle.org/dtds/suppressions_1_0.dtd">
 
 <suppressions>
-<!--    EXAMPLE -->
-<!--    <suppress checks="LineLength"-->
-<!--              files="AppConfig.java"-->
-<!--              lines="0-9999"/>-->
+        <suppress checks="LineLength"
+                  files="AppConfig.java"
+                  lines="0-9999"/>
 </suppressions>
 ```
 
-Other path — use:
+Other path — use `@SuppressWarnings`:
 ```java 
 @SuppressWarnings({"checkstyle:%module_name%", "checkstyle:%module_name%""})
 ``` 
