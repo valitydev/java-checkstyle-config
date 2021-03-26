@@ -239,14 +239,7 @@
         </module>
         <module name="OverloadMethodsDeclarationOrder"/>
         <module name="VariableDeclarationUsageDistance"/>
-        <!-- Switched from CustomImportOrder to ImportOrder to match IDEA defaults -->
-        <module name="ImportOrder">
-            <property name="groups" value="*,javax,java"/>
-            <property name="ordered" value="true"/>
-            <property name="separated" value="true"/>
-            <property name="option" value="bottom"/>
-            <property name="sortStaticImportsAlphabetically" value="true"/>
-        </module>
+        <!-- Removed ImportOrder cause no one cares -->
         <module name="MethodParamPad">
             <property name="tokens"
              value="CTOR_DEF, LITERAL_NEW, METHOD_CALL, METHOD_DEF,
