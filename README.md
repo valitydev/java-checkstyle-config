@@ -78,14 +78,14 @@ Example:
 
 ## Оформление
 
-Поддержание единого code style осуществляется за счет использования `maven-checkstyle-plugin` с настроенным под наc [google style конфигом](https://github.com/rbkmoney/java-checkstyle-config).
+Поддержание единого code style осуществляется за счет использования `maven-checkstyle-plugin` с настроенным под наc [google style конфигом](https://github.com/valitydev/java-checkstyle-config).
 
 Вам **не нужно вручную добавлять плагин** в свой проект. Чаще всего, будет достаточно использовать подходящий parent pom.
 
 #### Для Spring проекта:
 ```xml
 <parent>
-    <groupId>com.rbkmoney</groupId>
+    <groupId>dev.vality</groupId>
     <artifactId>service-parent-pom</artifactId>
     <version></version>
 </parent>
@@ -94,13 +94,13 @@ Example:
 #### Для любого другого java проекта:
 ```xml
 <parent>
-    <groupId>com.rbkmoney</groupId>
+    <groupId>dev.vality</groupId>
     <artifactId>library-parent-pom</artifactId>
     <version></version>
 </parent>
 ```
 
-**Важно**. Лучше если вы воспользуетесь нашим шаблонизатором для создания проектов [rbk-templator](https://github.com/rbkmoney/rbk-templator).
+**Важно**. Лучше если вы воспользуетесь нашим шаблонизатором для создания проектов [rbk-templator](https://github.com/valitydev/rbk-templator).
 Это удобно, в том числе, для того чтобы не следить за последними версиями parent pom.
 
 **Важно**. Если у вас цель модифицировать check style под свой проект - используйте property `checkstyle.config.path` с указанием пути до файла конфигурации:
@@ -120,11 +120,11 @@ Example:
 
 ![Intellij IDEA CodeStyle](images/codestyle/codestyle-intellij-idea.png)
 
-Актуальный файл конфигурации стилей можно взять из нашего [репозитория](https://raw.githubusercontent.com/rbkmoney/java-checkstyle-config/master/conf/rbkmoney_google_checkstyle.xml)
+Актуальный файл конфигурации стилей можно взять из нашего [репозитория](https://raw.githubusercontent.com/valitydev/java-checkstyle-config/master/conf/valitydev_google_checkstyle.xml)
 
 #### Автоформатирование кода
 
-Чтобы воспользоваться автоформатированием кода - импортируйте [файл конфигурации стилей](https://raw.githubusercontent.com/rbkmoney/java-checkstyle-config/master/conf/rbkmoney_google_checkstyle.xml) в `Code Style` вашей `IntelliJ IDEA`
+Чтобы воспользоваться автоформатированием кода - импортируйте [файл конфигурации стилей](https://raw.githubusercontent.com/valitydev/java-checkstyle-config/master/conf/valitydev_google_checkstyle.xml) в `Code Style` вашей `IntelliJ IDEA`
 
 ![Intellij IDEA CodeStyle Format](images/codestyle/codestyle-intellij-idea-autoformat.png)
 
@@ -132,7 +132,7 @@ Example:
 
 Форматирование осуществляется через вызов `Code > Reformat Code` в `IDEA`.
 
-**Важно**. Если у вас на CI check style падает с ошибкой, а у себя в локальной среде вы не видите ошибок форматирования кода - убедитесь, что используете актуальный [файл конфигурации стилей](https://raw.githubusercontent.com/rbkmoney/java-checkstyle-config/master/conf/rbkmoney_google_checkstyle.xml) в `IntelliJ IDEA` 
+**Важно**. Если у вас на CI check style падает с ошибкой, а у себя в локальной среде вы не видите ошибок форматирования кода - убедитесь, что используете актуальный [файл конфигурации стилей](https://raw.githubusercontent.com/valitydev/java-checkstyle-config/master/conf/valitydev_google_checkstyle.xml) в `IntelliJ IDEA` 
 
 ## Краткое описание классов
 
