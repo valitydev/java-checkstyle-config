@@ -100,9 +100,6 @@ Example:
 </parent>
 ```
 
-**Важно**. Лучше если вы воспользуетесь нашим шаблонизатором для создания проектов [rbk-templator](https://github.com/valitydev/rbk-templator).
-Это удобно, в том числе, для того чтобы не следить за последними версиями parent pom.
-
 **Важно**. Если у вас цель модифицировать check style под свой проект - используйте property `checkstyle.config.path` с указанием пути до файла конфигурации:
 ```xml
 <properties>
